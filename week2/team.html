@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>W02 Team Activity </title>
+  <link rel="stylesheet" href="F:\Faty_s\Byui\Courses\WDD 330\team\week 02\styles.css">
+  <script>
+
+    //first function
+    function view() {
+      let num = document.getElementById("text").value;
+      if (isNaN(num)) {
+        document.getElementById("display").innerHTML = "This is not a number";
+      }
+      else {
+        let i;
+        let sum = 0;
+        for (i = 0; i <= num; i++) {
+          sum += i;
+          document.getElementById("display").innerHTML = sum;
+        }
+      }
+    }
+    // summation
+    function sum() {
+      let num1 = parseFloat(document.getElementById("num1").value);
+      let num2 = parseFloat(document.getElementById("num2").value);
+      if (isNaN(num1)) {
+        document.getElementById("sumView").innerHTML = "This is not a number";
+      }
+      else if (isNaN(num2)) {
+        document.getElementById("sumView").innerHTML = "This is not a number";
+      }
+      else {
+        let sum = num1 + num2;
+        document.getElementById("sumView").innerHTML = sum;
+      }
+    }
+
+    // Challenger arrow function
+
+    subtraction = () => {
+      let minuend = parseFloat(document.getElementById("minuend").value);
+      let subtracting = parseFloat(document.getElementById("subtracting").value);
+      if (isNaN(minuend)) {
+        document.getElementById("restView").innerHTML = "This is not a number";
+      }
+      else if (isNaN(subtracting)) {
+        document.getElementById("restView").innerHTML = "This is not a number";
+      }
+      else {
+        let rest = minuend - subtracting;
+        document.getElementById("restView").innerHTML = rest;
+      }
+    }
+
+    multiplication = () => {
+      let factor1 = parseFloat(document.getElementById("factor1").value);
+      let factor2 = parseFloat(document.getElementById("factor2").value);
+      if (isNaN(factor1)) {
+        document.getElementById("multiView").innerHTML = "This is not a number";
+      }
+      else if (isNaN(factor2)) {
+        document.getElementById("multiView").innerHTML = "This is not a number";
+      }
+      else {
+        let product = factor1 * factor2;
+        document.getElementById("multiView").innerHTML = product;
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div>
+    <h1>Team Activity</h1>
+    <p>The first function</p>
+    <input type="text" id="text">
+    <button type="button" onclick="view()">Shown Me</button>
+    <div id="display"></div>
+
+    <p>Adding machine</p>
+    <input type="text" id="num1"> + <input type="text" id="num2">
+    <button type="button" onclick="sum()">=</button>
+    <div id="sumView"></div>
+
+    <p>Stretch Goals - Arrow function</p>
+    <p>Subtracting</p>
+    <input type="text" id="minuend">-<input type="text" id="subtracting">
+    <button type="button" onclick="subtraction()">=</button>
+    <div id="restView"></div>
+
+    <p>Multiplication</p>
+    <input type="text" id="factor1">*<input type="text" id="factor2">
+    <button type="button" onclick="multiplication()">=</button>
+    <div id="multiView"></div>
+  </div>
+</body>
+
+</html>
