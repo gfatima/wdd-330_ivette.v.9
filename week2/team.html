@@ -5,16 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>W02 Team Activity </title>
-  <link rel="stylesheet" href="F:\Faty_s\Byui\Courses\WDD 330\team\week 02\styles.css">
+  <link rel="stylesheet" href="../week2/style.css">
   <script>
-
     //first function
     function view() {
       let num = document.getElementById("text").value;
       if (isNaN(num)) {
         document.getElementById("display").innerHTML = "This is not a number";
-      }
-      else {
+      } else {
         let i;
         let sum = 0;
         for (i = 0; i <= num; i++) {
@@ -29,11 +27,9 @@
       let num2 = parseFloat(document.getElementById("num2").value);
       if (isNaN(num1)) {
         document.getElementById("sumView").innerHTML = "This is not a number";
-      }
-      else if (isNaN(num2)) {
+      } else if (isNaN(num2)) {
         document.getElementById("sumView").innerHTML = "This is not a number";
-      }
-      else {
+      } else {
         let sum = num1 + num2;
         document.getElementById("sumView").innerHTML = sum;
       }
@@ -46,11 +42,9 @@
       let subtracting = parseFloat(document.getElementById("subtracting").value);
       if (isNaN(minuend)) {
         document.getElementById("restView").innerHTML = "This is not a number";
-      }
-      else if (isNaN(subtracting)) {
+      } else if (isNaN(subtracting)) {
         document.getElementById("restView").innerHTML = "This is not a number";
-      }
-      else {
+      } else {
         let rest = minuend - subtracting;
         document.getElementById("restView").innerHTML = rest;
       }
@@ -61,11 +55,9 @@
       let factor2 = parseFloat(document.getElementById("factor2").value);
       if (isNaN(factor1)) {
         document.getElementById("multiView").innerHTML = "This is not a number";
-      }
-      else if (isNaN(factor2)) {
+      } else if (isNaN(factor2)) {
         document.getElementById("multiView").innerHTML = "This is not a number";
-      }
-      else {
+      } else {
         let product = factor1 * factor2;
         document.getElementById("multiView").innerHTML = product;
       }
