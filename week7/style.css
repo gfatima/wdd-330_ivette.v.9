@@ -73,7 +73,7 @@ ul {
   text-decoration: none;
   font-family: 'Ropa Sans', sans-serif;
   text-transform: uppercase;
-  padding: 6px 20px;
+  padding: 6.1px 20px;
   display: block;
   width: 100%;
 }
@@ -137,7 +137,7 @@ ul {
   text-transform: uppercase;
   margin: auto;
   padding: 0px 10px;
-  border-right: 1.1px solid #fff;
+  border-right: 1px solid #fff;
 }
 
 #user-navigation a:hover {
@@ -264,8 +264,22 @@ ol {
   color: bisque;
   font-size: 1.5em;
   margin-left: 2em;
+
 }
 
+.notes {
+  grid-column: 1/5;
+  background-color: rgba(255, 127, 80, 0.452);
+  font-size: 1.5em;
+  font-family: 'Mali', cursive;
+  font-weight: bold;
+  margin: 2em 5em;
+  padding: 2em 3em;
+}
+
+.notes h3 {
+  text-align: center;
+}
 
 
 /*<!--========== FOOTER ==========-->*/
