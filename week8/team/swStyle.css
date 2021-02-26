@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&family=Poppins:wght@100&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: rgb(245, 204, 23);
+  font-size: 2em;
+  background-color: black;
+  letter-spacing: 0.1em;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+button {
+  background-color: transparent;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(245, 204, 23);
+  text-align: center;
+}
+
+.btn {
+  max-width: 70%;
+  margin: auto;
+  font-size: 1em;
+  padding-left: 30%;
+
+}
+
+.button_prev,
+.button_next {
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+
+}
+
+.page_button {
+  font-size: .5em;
+  font-weight: bold;
+  border: none;
+  border-left: 1px solid rgb(245, 204, 23);
+  border-right: .5px solid rgb(245, 204, 23);
+  padding: 0px 10px;
+
+}
+
+.button_container {
+  padding: 2px;
+  font-weight: bold;
+  font-size: 2em;
+
+}
+
+
+.hidden {
+  display: none;
+}
+
+/******/
+.people_list_container {
+  border: 4px solid rgb(245, 204, 23);
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 75%;
+  margin: auto;
+}
+
+li {
+  font-size: .8em;
+  border: 1px solid rgb(245, 204, 23);
+  margin: 10px;
+  list-style: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+li .extra_info {
+  display: none;
+}
+
+li.active .extra_info {
+  display: block;
+}
+
+.active {
+  background-color: transparent;
+}
