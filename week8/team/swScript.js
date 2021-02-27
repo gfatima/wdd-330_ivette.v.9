@@ -3,7 +3,7 @@ const first_url = "https://swapi.dev/api/people/";
 const button_next = document.querySelector(".button_next");
 const button_prev = document.querySelector(".button_prev");
 const list_container = document.querySelector(".people_list_container");
-const buttons_container = document.querySelector(".button_container");
+const buttons_container = document.querySelector(".buttons_container");
 let active_html_element;
 
 let next_url = "";
