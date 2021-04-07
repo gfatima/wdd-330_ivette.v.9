@@ -269,6 +269,7 @@ h2 {
 }
 
 .items li a.active {
+    
     background-color: bisque;
     color: rgb(61, 3, 3);
     box-sizing: border-box;
