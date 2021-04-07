@@ -13,7 +13,7 @@
   <div class="content">
     <header>
       <div id="top-links">
-        <img class="img-h" src="img/ifs5.png" alt="">
+        <img class="img-h" src="img/logisin1.png" alt="">
         <div id="menu-container" class="menu">
           <nav>
             <ul>
@@ -141,9 +141,6 @@
           <input id="search-box" title="Search" type="search" placeholder="Search Here ..." value>
           <input class="btn-search" id="search-button" name="submit" value="SEARCH">
         </div>
-        <a href="">
-          <img id="logo" src="img/logisin.png" alt="">
-        </a>
       </div>
     </header>
     <main>
@@ -155,7 +152,10 @@
       </div>
       <div class="containt">
         <div class="items">
-          <h2>BLOCKS FIRST</h2>
+          <h2>wEeKs</h2>
+          <div class="proj"><a href="https://gfatima.github.io/catmeow/index.html">CatMeow</a>
+            <h2>PROJECT</h2>
+          </div>
           <ol>
             <li><a href="week1/index.html">Week One</a></li>
             <li><a href="week2/index.html">Week Two</a></li>
@@ -173,9 +173,25 @@
             <li><a href="week14/index.html">Week Fourteen</a></li>
             <li><a href="ToDo/index.html">Challenge 2: ToDo</a></li>
           </ol>
+          <div>
+            <!-- Cat walking GIF from: http://www.anniemation.com/clip_art/graphics.html -->
+            <img id="cat" src="https://www.kasandbox.org/programming-images/misc/cat-walk.gif">
+
+          </div>
           <script src="js/main.js"></script>
         </div>
       </div>
+
+      <script>
+        var catEl = document.getElementById("cat");
+
+        var startTime = new Date().getTime();
+        var walkTheCat = function () {
+          var currTime = new Date().getTime();
+          var secondsElapsed = ((currTime - startTime) / 1000);
+        };
+        walkTheCat();
+      </script>
 
     </main>
 
