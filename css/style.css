@@ -317,18 +317,66 @@ ol {
     margin-left: 30%;
 }
 
-/*<!--========== W1 ==========-->*/
+/*<!--========== WS ==========-->*/
+.subtitle-8 {
+    grid-column: 2/4;
+    font-family: 'Mali', cursive;
+    font-size: 1.5em;
+    margin: 0;
+    margin-top: 1em;
+    text-align: center;
+    background-color: rgba(255, 204, 204, 0.6);
+}
+
+.subtitle-8:hover {
+    background-color: rgba(255, 127, 80, 0.452);
+    transition: all 500ms ease-in-out;
+}
+
+.subtitle-8:hover .title span {
+    display: none;
+}
+
+.subtitle-8:hover .title:after {
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    content: "Transicion";
+}
+
 .notes {
-    grid-column: 1/6;
+    grid-column: 1/5;
     background-color: rgba(255, 127, 80, 0.452);
     font-size: 1.5em;
     font-family: 'Mali', cursive;
     font-weight: bold;
-    margin: 2em 5em;
+    margin: 1em 5em;
     padding: 2em 3em;
 }
 
 .notes h3 {
+    text-align: center;
+}
+
+.notes a {
+    text-decoration: none;
+    padding-left: 30px;
+
+}
+
+.notes a:hover {
+    text-transform: uppercase;
+    -ms-transform: rotate(45deg);
+    /* IE 9 */
+    -ms-transform-origin: 20% 40%;
+    /* IE 9 */
+    transform: rotate(45deg);
+    transform-origin: 20% 40%;
+}
+
+.first-notes {
+    display: flex;
     text-align: center;
 }
 
