@@ -232,18 +232,18 @@ h2 {
 /*<!--========== MAIN ==========-->*/
 .containt {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     max-width: 100%;
     background-color: rgba(255, 204, 204, 0.6);
     margin: 2% 0%;
 }
 
 .items {
-    grid-column: 2/4;
-    background-color: rgba(73, 17, 48, 0.76);
+    grid-column: 2/5;
+    background-color: rgba(110, 26, 72, 0.788);
     margin: 4% 0%;
-    box-shadow: 2px 2px 8px .9 rgba(127, 9, 138, 0.507),
-        2px 2px 8px .9 rgba(240, 135, 15, 0.19);
+    box-shadow: 2px 2px 8px .9 rgba(183, 4, 199, 0.507),
+    2px 2px 8px .9 rgba(240, 135, 15, 0.19);
 
 }
 
@@ -258,19 +258,18 @@ h2 {
     text-decoration: none;
     font-family: 'Abel', sans-serif;
     color: bisque;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 ol {
     font-family: 'Abel', sans-serif;
     color: bisque;
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-left: 2em;
 }
 
-
-
 /*<!--========== FOOTER ==========-->*/
+
 footer {
     font-family: 'Mali', cursive;
     height: 80px;
